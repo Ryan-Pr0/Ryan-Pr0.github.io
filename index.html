@@ -10,7 +10,7 @@
 <body class="bg-light text-dark">
 
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-primary shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-teal bg-gradient shadow-sm" style="background: linear-gradient(90deg, #006d77, #00afb9);">
     <div class="container">
       <a class="navbar-brand fw-bold text-uppercase" href="#">Ryan Gooding</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -18,42 +18,47 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Profile</a></li>
-          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Education</a></li>
-          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link active fw-semibold text-warning" href="#">Profile</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#">Education</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#">Hobbies</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  
-  <header class="bg-primary bg-gradient text-white text-center py-5 shadow-sm">
+
+  <header class="py-5 text-center text-light" style="background: linear-gradient(135deg, #00afb9, #f07167);">
     <div class="container">
-      <h1 class="display-5 fw-bold mb-3">Welcome to My Student Profile</h1>
-      <p class="lead mb-0">Exploring technology, creativity, and personal growth at Acadia University</p>
+      <h1 class="display-5 fw-bold">Welcome to My Student Profile</h1>
+      <p class="lead">Exploring Technology • Creativity • Growth at Acadia University</p>
     </div>
   </header>
 
   
   <main class="container my-5">
-
-    <!-- Profile Section -->
-    <section class="card shadow-sm border-0 mb-5">
-      <div class="card-body">
-        <h2 class="card-title h3 mb-3 text-primary fw-bold">About Me</h2>
-        <p class="lead">My name is <strong>Ryan Gooding</strong>. I am a third-year software development student at Acadia University. I enjoy learning about how computers are built and how humans interact with technology.</p>
-        <p>After graduation, I plan to work in the tech industry to gain experience, but my ultimate goal is to become an online fitness coach and entrepreneur — blending technology and wellness.</p>
+    <section class="card border-0 shadow-lg mb-5">
+      <div class="card-body p-4">
+        <div class="row align-items-center g-4">
+          <div class="col-md-4 text-center">
+            <img src="profile.jpg" alt="Ryan Gooding" class="img-fluid rounded-circle shadow-sm" style="max-width: 200px;">
+          </div>
+          <div class="col-md-8">
+            <h2 class="h3 fw-bold text-teal" style="color: #006d77;">About Me</h2>
+            <p class="lead">Hi! I'm <strong>Ryan Gooding</strong>, a third-year Software Development student at Acadia University. I’m passionate about how computers work and how people can use them creatively and effectively.</p>
+            <p>After graduation, I plan to start a career in computer science, then transition into entrepreneurship — launching an online fitness coaching business that blends tech with health and motivation.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="card shadow-sm border-0 mb-5">
+    
+    <section class="card border-0 shadow-sm mb-5">
       <div class="card-body">
-        <h2 class="card-title h4 mb-3 text-success fw-bold">Student Information</h2>
-
+        <h2 class="h4 fw-bold mb-3" style="color: #00afb9;">Education & Background</h2>
+        
         <div class="table-responsive mb-4">
-          <table class="table table-striped table-hover text-center align-middle">
-            <thead class="table-success">
+          <table class="table table-striped table-hover align-middle text-center">
+            <thead style="background-color: #f07167; color: white;">
               <tr>
                 <th>Degree</th>
                 <th>Year</th>
@@ -70,10 +75,10 @@
           </table>
         </div>
 
-        <h3 class="h5 text-secondary fw-bold">Additional Information</h3>
+        <h3 class="h5 fw-bold mb-3" style="color: #006d77;">Additional Information</h3>
         <div class="table-responsive">
-          <table class="table table-bordered table-hover text-center align-middle">
-            <thead class="table-secondary">
+          <table class="table table-bordered text-center align-middle">
+            <thead style="background-color: #83c5be; color: #00494f;">
               <tr>
                 <th>Sex</th>
                 <th>Age</th>
@@ -92,48 +97,47 @@
       </div>
     </section>
 
-    <!-- Hobbies Section -->
-    <section class="card shadow-sm border-0">
+    
+    <section class="card border-0 shadow-sm">
       <div class="card-body">
-        <h2 class="card-title h4 text-danger fw-bold mb-4">My Hobbies</h2>
-
-        <!-- Image Gallery -->
-        <div class="d-flex flex-wrap gap-4 justify-content-center mb-4">
-          <div class="card shadow border-0" style="width: 200px;">
-            <img src="weight.jpg" class="card-img-top rounded-top" alt="Weightlifting">
+        <h2 class="h4 fw-bold mb-4" style="color: #f07167;">My Hobbies</h2>
+        
+        
+        <div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+          <div class="card border-0 shadow-sm" style="width: 200px;">
+            <img src="weight.jpg" alt="Weightlifting" class="card-img-top rounded-top">
             <div class="card-body text-center">
-              <p class="card-text fw-semibold">Weightlifting</p>
+              <p class="fw-semibold mb-0" style="color: #006d77;">Weightlifting</p>
             </div>
           </div>
-          <div class="card shadow border-0" style="width: 200px;">
-            <img src="video.jpg" class="card-img-top rounded-top" alt="Gaming Controller">
+          <div class="card border-0 shadow-sm" style="width: 200px;">
+            <img src="video.jpg" alt="Gaming" class="card-img-top rounded-top">
             <div class="card-body text-center">
-              <p class="card-text fw-semibold">Video Games</p>
+              <p class="fw-semibold mb-0" style="color: #006d77;">Video Games</p>
             </div>
           </div>
-          <div class="card shadow border-0" style="width: 200px;">
-            <img src="Anime.jpg" class="card-img-top rounded-top" alt="Anime Character">
+          <div class="card border-0 shadow-sm" style="width: 200px;">
+            <img src="Anime.jpg" alt="Anime" class="card-img-top rounded-top">
             <div class="card-body text-center">
-              <p class="card-text fw-semibold">Watching Anime</p>
+              <p class="fw-semibold mb-0" style="color: #006d77;">Watching Anime</p>
             </div>
           </div>
         </div>
 
-        <!-- Styled List -->
+        
         <ul class="list-group list-group-horizontal-md justify-content-center shadow-sm">
-          <li class="list-group-item flex-fill text-center fw-semibold">🏋️ Weightlifting</li>
-          <li class="list-group-item flex-fill text-center fw-semibold">🎮 Gaming</li>
-          <li class="list-group-item flex-fill text-center fw-semibold">🎥 Anime</li>
+          <li class="list-group-item flex-fill text-center fw-semibold" style="color: #00afb9;">🏋️ Weightlifting</li>
+          <li class="list-group-item flex-fill text-center fw-semibold" style="color: #f07167;">🎮 Gaming</li>
+          <li class="list-group-item flex-fill text-center fw-semibold" style="color: #006d77;">🎥 Anime</li>
         </ul>
       </div>
     </section>
   </main>
 
-  
-  <footer class="bg-dark bg-gradient text-light text-center py-4 mt-5">
+
+  <footer class="text-light text-center py-4 mt-5" style="background: linear-gradient(90deg, #006d77, #00afb9);">
     <div class="container">
-      <p class="mb-1 fw-semibold">© 2025 Ryan Gooding | Student at Acadia University</p>
-      <small class="text-secondary">Made with ❤️ using Bootstrap 5</small>
+      <p class="fw-semibold mb-1">© 2025 Ryan Gooding | Student at Acadia University</p>
     </div>
   </footer>
 
