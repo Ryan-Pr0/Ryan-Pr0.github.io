@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,49 +10,70 @@
 <body class="bg-light text-dark">
 
   
-  <nav class="navbar navbar-expand-lg navbar-dark bg-teal bg-gradient shadow-sm" style="background: linear-gradient(90deg, #006d77, #00afb9);">
+  <nav class="navbar navbar-expand-lg shadow-sm py-3" 
+       style="background: linear-gradient(90deg, #00494f, #006d77);">
     <div class="container">
-      <a class="navbar-brand fw-bold text-uppercase" href="#">Ryan Gooding</a>
+      <a class="navbar-brand fw-bold text-uppercase text-warning" href="#">Ryan Gooding</a>
+      
+      <!-- Dark Mode Toggle -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active fw-semibold text-warning" href="#">Profile</a></li>
-          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#">Education</a></li>
-          <li class="nav-item"><a class="nav-link fw-semibold text-light" href="#">Hobbies</a></li>
+
+      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light px-3" href="#profile" 
+               style="transition: 0.3s;">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light px-3" href="#education" 
+               style="transition: 0.3s;">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light px-3" href="#hobbies" 
+               style="transition: 0.3s;">Hobbies</a>
+          </li>
         </ul>
+
+        <!-- Toggle Switch -->
+        <div class="form-check form-switch text-light">
+          <input class="form-check-input" type="checkbox" id="themeToggle">
+          <label class="form-check-label fw-semibold" for="themeToggle">🌙 Dark Mode</label>
+        </div>
       </div>
     </div>
   </nav>
 
-
-  <header class="py-5 text-center text-light" style="background: linear-gradient(135deg, #00afb9, #f07167);">
+  
+  <header class="py-5 text-center text-light" 
+          style="background: linear-gradient(135deg, #00afb9, #f07167);">
     <div class="container">
       <h1 class="display-5 fw-bold">Welcome to My Student Profile</h1>
-      <p class="lead">Exploring Technology • Creativity • Growth at Acadia University</p>
+      <p class="lead mb-0">Exploring Technology • Creativity • Growth at Acadia University</p>
     </div>
   </header>
 
-  
+
   <main class="container my-5">
-    <section class="card border-0 shadow-lg mb-5">
+    <section id="profile" class="card border-0 shadow-lg mb-5">
       <div class="card-body p-4">
         <div class="row align-items-center g-4">
           <div class="col-md-4 text-center">
-            <img src="profile.jpg" alt="Ryan Gooding" class="img-fluid rounded-circle shadow-sm" style="max-width: 200px;">
+            <img src="Ryan Photo.jpg" alt="Ryan Gooding" 
+                 class="img-fluid rounded-circle shadow-sm" style="max-width: 200px;">
           </div>
           <div class="col-md-8">
-            <h2 class="h3 fw-bold text-teal" style="color: #006d77;">About Me</h2>
+            <h2 class="h3 fw-bold" style="color: #006d77;">About Me</h2>
             <p class="lead">Hi! I'm <strong>Ryan Gooding</strong>, a third-year Software Development student at Acadia University. I’m passionate about how computers work and how people can use them creatively and effectively.</p>
-            <p>After graduation, I plan to start a career in computer science, then transition into entrepreneurship — launching an online fitness coaching business that blends tech with health and motivation.</p>
+            <p>After graduation, I plan to work in computer science, then transition into entrepreneurship — launching an online fitness coaching business that blends tech with health and motivation.</p>
           </div>
         </div>
       </div>
     </section>
 
-    
-    <section class="card border-0 shadow-sm mb-5">
+  
+    <section id="education" class="card border-0 shadow-sm mb-5">
       <div class="card-body">
         <h2 class="h4 fw-bold mb-3" style="color: #00afb9;">Education & Background</h2>
         
@@ -98,10 +119,9 @@
     </section>
 
     
-    <section class="card border-0 shadow-sm">
+    <section id="hobbies" class="card border-0 shadow-sm">
       <div class="card-body">
         <h2 class="h4 fw-bold mb-4" style="color: #f07167;">My Hobbies</h2>
-        
         
         <div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
           <div class="card border-0 shadow-sm" style="width: 200px;">
@@ -124,7 +144,6 @@
           </div>
         </div>
 
-        
         <ul class="list-group list-group-horizontal-md justify-content-center shadow-sm">
           <li class="list-group-item flex-fill text-center fw-semibold" style="color: #00afb9;">🏋️ Weightlifting</li>
           <li class="list-group-item flex-fill text-center fw-semibold" style="color: #f07167;">🎮 Gaming</li>
@@ -134,12 +153,29 @@
     </section>
   </main>
 
-
-  <footer class="text-light text-center py-4 mt-5" style="background: linear-gradient(90deg, #006d77, #00afb9);">
+  
+  <footer class="text-light text-center py-4 mt-5" 
+          style="background: linear-gradient(90deg, #006d77, #00afb9);">
     <div class="container">
       <p class="fw-semibold mb-1">© 2025 Ryan Gooding | Student at Acadia University</p>
+      <small class="text-warning">Created with 💙 using Bootstrap 5</small>
     </div>
   </footer>
+
+  
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    toggle.addEventListener('change', function() {
+      html.setAttribute('data-bs-theme', this.checked ? 'dark' : 'light');
+    });
+
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('mouseover', () => link.style.color = '#ffdd57');
+      link.addEventListener('mouseout', () => link.style.color = '#ffffff');
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
