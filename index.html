@@ -8,94 +8,132 @@
 </head>
 
 <body class="bg-light text-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-primary shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Ryan Gooding</a>
+      <a class="navbar-brand fw-bold text-uppercase" href="#">Ryan Gooding</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Profile</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Hobbies</a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Profile</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Education</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="#">Hobbies</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  
+  <header class="bg-primary bg-gradient text-white text-center py-5 shadow-sm">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">Welcome to My Student Profile</h1>
+      <p class="lead mb-0">Exploring technology, creativity, and personal growth at Acadia University</p>
+    </div>
+  </header>
 
-  <main class="container bg-white p-4 rounded shadow-sm my-5">
-    <section class="mb-5">
-      <h1 class="display-6">Student Profile: <strong>Ryan Gooding</strong></h1>
-      <p class="lead">My name is Ryan Gooding. I am a third-year student at Acadia. My major is software development. My favorite part of my degree is learning how computers are built and how humans can interact with them.</p>
-      <p>When I finish school, I plan to get a job in computer science, but not permanently. I want to use that income to fund my real business: becoming an online fitness coach.</p>
-    </section>
+  
+  <main class="container my-5">
 
-    
-    <section class="mb-5">
-      <h2 class="h4">Student Information</h2>
-      <div class="table-responsive">
-        <table class="table table-striped table-bordered table-hover text-center">
-          <thead class="table-light">
-            <tr>
-              <th>Degree</th>
-              <th>Year</th>
-              <th>School</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Computer Science</td>
-              <td>3rd Year</td>
-              <td>Acadia University</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3 class="h5 mt-4">Additional Information</h3>
-      <div class="table-responsive">
-        <table class="table table-striped table-bordered table-hover text-center">
-          <thead class="table-light">
-            <tr>
-              <th>Sex</th>
-              <th>Age</th>
-              <th>Hometown</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Male</td>
-              <td>22</td>
-              <td>Nassau, Bahamas</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- Profile Section -->
+    <section class="card shadow-sm border-0 mb-5">
+      <div class="card-body">
+        <h2 class="card-title h3 mb-3 text-primary fw-bold">About Me</h2>
+        <p class="lead">My name is <strong>Ryan Gooding</strong>. I am a third-year software development student at Acadia University. I enjoy learning about how computers are built and how humans interact with technology.</p>
+        <p>After graduation, I plan to work in the tech industry to gain experience, but my ultimate goal is to become an online fitness coach and entrepreneur — blending technology and wellness.</p>
       </div>
     </section>
 
-    
-    <section>
-      <h4>Three hobbies of mine:</h4>
-      <div class="d-flex flex-wrap gap-3 justify-content-center mb-3">
-        <img src="weight.jpg" alt="Weightlifting" class="img-fluid rounded shadow" style="max-width:200px;">
-        <img src="video.jpg" alt="Gaming Controller" class="img-fluid rounded shadow" style="max-width:200px;">
-        <img src="Anime.jpg" alt="Anime Character" class="img-fluid rounded shadow" style="max-width:200px;">
-      </div>
+    <!-- Education Section -->
+    <section class="card shadow-sm border-0 mb-5">
+      <div class="card-body">
+        <h2 class="card-title h4 mb-3 text-success fw-bold">Student Information</h2>
 
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Weightlifting</li>
-        <li class="list-group-item">Video Games</li>
-        <li class="list-group-item">Watching Anime</li>
-      </ul>
+        <div class="table-responsive mb-4">
+          <table class="table table-striped table-hover text-center align-middle">
+            <thead class="table-success">
+              <tr>
+                <th>Degree</th>
+                <th>Year</th>
+                <th>School</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Computer Science</td>
+                <td>3rd Year</td>
+                <td>Acadia University</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="h5 text-secondary fw-bold">Additional Information</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover text-center align-middle">
+            <thead class="table-secondary">
+              <tr>
+                <th>Sex</th>
+                <th>Age</th>
+                <th>Hometown</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Male</td>
+                <td>22</td>
+                <td>Nassau, Bahamas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="card shadow-sm border-0">
+      <div class="card-body">
+        <h2 class="card-title h4 text-danger fw-bold mb-4">My Hobbies</h2>
+
+        <!-- Image Gallery -->
+        <div class="d-flex flex-wrap gap-4 justify-content-center mb-4">
+          <div class="card shadow border-0" style="width: 200px;">
+            <img src="weight.jpg" class="card-img-top rounded-top" alt="Weightlifting">
+            <div class="card-body text-center">
+              <p class="card-text fw-semibold">Weightlifting</p>
+            </div>
+          </div>
+          <div class="card shadow border-0" style="width: 200px;">
+            <img src="video.jpg" class="card-img-top rounded-top" alt="Gaming Controller">
+            <div class="card-body text-center">
+              <p class="card-text fw-semibold">Video Games</p>
+            </div>
+          </div>
+          <div class="card shadow border-0" style="width: 200px;">
+            <img src="Anime.jpg" class="card-img-top rounded-top" alt="Anime Character">
+            <div class="card-body text-center">
+              <p class="card-text fw-semibold">Watching Anime</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Styled List -->
+        <ul class="list-group list-group-horizontal-md justify-content-center shadow-sm">
+          <li class="list-group-item flex-fill text-center fw-semibold">🏋️ Weightlifting</li>
+          <li class="list-group-item flex-fill text-center fw-semibold">🎮 Gaming</li>
+          <li class="list-group-item flex-fill text-center fw-semibold">🎥 Anime</li>
+        </ul>
+      </div>
     </section>
   </main>
 
   
-  <footer class="bg-dark text-light py-3 mt-auto">
-    <div class="container text-center small">
-      © 2025 Ryan Gooding | Student at Acadia University
+  <footer class="bg-dark bg-gradient text-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1 fw-semibold">© 2025 Ryan Gooding | Student at Acadia University</p>
+      <small class="text-secondary">Made with ❤️ using Bootstrap 5</small>
     </div>
   </footer>
 
